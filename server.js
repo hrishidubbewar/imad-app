@@ -25,7 +25,7 @@ function createTemplate (data) {
         <html>
             <head>
                 <title>
-                    ${Title}
+                    ${title}
                 </title>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link href="/ui/style.css" rel="stylesheet" />
@@ -55,6 +55,10 @@ function createTemplate (data) {
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/article-one', function (req, res) {
+  res.send(createTemplate(articleOne));
 });
 
 app.get('/first', function (req, res) {
