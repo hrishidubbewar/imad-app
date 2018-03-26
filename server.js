@@ -9,7 +9,7 @@ var articleOne = {
     Title : 'Article one | Hrishikesh Dubewar',
     heading : 'Article one',
     date : '15 march',
-    content: `<p>This is my first article.This is my first article.This is my first article.This is my first article.
+    content: `<p>This is my <a href="http://hrishidubbewar.imad.hasura-app.io/article-two">first article</a>.This is my first article.This is my first article.This is my first article.
     This is my first article.This is my first article.This is my first article.This is my first article.
     This is my first article.This is my first article.This is my first article.This is my first article.
     This is my first article.This is my first article.This is my first article.This is my first article.</p>`
