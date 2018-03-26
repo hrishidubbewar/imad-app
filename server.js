@@ -15,6 +15,16 @@ var articleOne = {
     This is my first article.This is my first article.This is my first article.This is my first article.</p>`
 };
 
+var articleTwo = {
+    Title : 'Article two | Mohit Patil',
+    heading : 'Article one',
+    date : '16 march',
+    content: `<p>This is my second article.This is my first article.This is my first article.This is my first article.
+    This is my first article.This is my first article.This is my first article.This is my first article.
+    This is my first article.This is my first article.This is my first article.This is my first article.
+    This is my first article.This is my first article.This is my first article.This is my first article.</p>`
+};
+
 function createTemplate (data) {
     var title = data.Title;
     var heading = data.heading;
@@ -59,6 +69,10 @@ app.get('/', function (req, res) {
 
 app.get('/article-one', function (req, res) {
   res.send(createTemplate(articleOne));
+});
+
+app.get('/article-one', function (req, res) {
+  res.send(createTemplate(articleTwo));
 });
 
 app.get('/first', function (req, res) {
